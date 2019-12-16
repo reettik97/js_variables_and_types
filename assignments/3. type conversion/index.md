@@ -7,7 +7,7 @@ typeof false;           //false
 typeof function () {};  //object//function
 var phone = 8983700;    
 typeof phone;           //number
-typeof null;            //null
+typeof null;            //object
 ```
 
 2. 🎖 Output of the code below

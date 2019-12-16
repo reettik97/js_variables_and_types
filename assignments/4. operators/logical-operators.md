@@ -5,32 +5,32 @@
 * [ ] Logical AND operation
 
 ```js
-true  && true; //output
-true  && false;
-false && true;
-false && false;
-"foo" && "bar";
-"bar" && "foo";
-"foo" && "";
-""    && "foo";
-" "   && "John" && "" && false
-false && "Hey" && undefined
-"undefined" && false && 42
+true  && true; //output                   //true
+true  && false;                           //false
+false && true;                            //false
+false && false;                           //false
+"foo" && "bar";                           //bar
+"bar" && "foo";                           //foo
+"foo" && "";                              //""
+""    && "foo";                           //""
+" "   && "John" && "" && false            //""
+false && "Hey" && undefined               //false
+"undefined" && false && 42                //undefined
 ```
 
 * [ ] Logical OR operation
 ```js
-true  || true;
-true  || false;
-false || true;
-false || false;
-"foo" || "bar";
-"bar" || "foo";
-"foo" || "";
-""    || "foo";
-" "   || "John" || "" || false
-false || "Hey" || undefined
-"undefined" || false || 42
+true  || true;                           //true
+true  || false;                          //true
+false || true;                           //true
+false || false;                          //false
+"foo" || "bar";                          //foo
+"bar" || "foo";                          //bar
+"foo" || "";                             //foo
+""    || "foo";                          //foo
+" "   || "John" || "" || false           //" "
+false || "Hey" || undefined              //"Hey"
+"undefined" || false || 42               //42
 ```
 
 2. 🥈You have two variables i.e `isGuestOneVeg` and  `isGuestTwoVeg` according to the value using logical && and || opeartor do the following.
@@ -42,6 +42,21 @@ false || "Hey" || undefined
 let isGuestOneVeg = false;
 let isGuestTwoVeg = false;
 // Your code goes here
+if(isGuestOneVeg && isGuestTwoVeg)
+   { 
+       console.log("Only offer up vegan dishes.");
+   }
+   else
+   { 
+          if(isGuestOneVeg || isGuestTwoVeg)
+          {
+              console.log("Make sure to offer up some vegan options.");
+          }
+          else
+          {
+              console.log("Offer up anything on the menu");
+          }
+   }
 ```
 
 
@@ -52,9 +67,34 @@ let isGuestTwoVeg = false;
 ```js
 let temperature = 4;
 // Your code goes here
+ if(temperature < 32)
+   { 
+       console.log("It is freezing outside");
+   }
+   else
+   { 
+          if(temperature > 110)
+          {
+              console.log("It is hot outside");
+          }
+          else
+          {
+              console.log("It is pretty nice out");
+          }
+   }
 ```
 
 4. 🎖 Output of this and the reason behind the output.
 ```js
 alert( alert(1) || 2 || alert(3) );
+
+
+//output
+first alert box show value 1 
+secound alert box show value 2
+
+//reason:
+"OR" operator find first true value;
+in main alert function  first  come alert(1),  becouse it is a function its execute and show 1 in the alert box . then come 2 ,becouse 2 is a true value thats why the hole OR operation terminate and the main alert function show the value 2; 
+
 ```
