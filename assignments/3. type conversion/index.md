@@ -31,6 +31,6 @@ Number(true);            //  1
 
 ```js
 var x = 10 + "1";       
-console.log(x);         //11
-typeof x;               // number
+console.log(x);         //"101"
+typeof x;               // string
 ```
