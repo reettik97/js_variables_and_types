@@ -31,7 +31,7 @@ function formatAmount()
 {
     var str = "";
     var total_amount = amount +  calculateTax(amount);
-    total_amont
+    total_amount = total_amount.toFixed()
     str = "$ " + String(total_amount);
     return str; 
 }
