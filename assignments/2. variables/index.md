@@ -27,7 +27,7 @@ var woman3;               //(Right)
 var -girl;                //(Wrong)
 var blackDog;             //(Right)
 var 42;                   //(Wrong)
-var $42;                  //(Wrong)
+var $42;                  //(Rigth)
 var userName;             //(Right)
 var x, y, z;              //(Right)
 var x = 5, y = 6, z = 7;  //(Right)
@@ -64,7 +64,7 @@ var markAge = 35;
 // Check who is younger
 // Check if their age is equal
   if(johnAge == markAge)
-  {console.log("mark and john both age are same");}
+  {console.log("mark and john both are in same age");}
   else{
         if(johnAge > markAge)
             {
@@ -82,7 +82,7 @@ var markAge = 35;
 // Check if john is less then or equal to mark.
 var john_age = johnAge;
   if(john_age == markAge)
-  {console.log("mark and john both are same age");}
+  {console.log("mark and john both are in same age");}
   else{
         if(john_age > markAge)
             {

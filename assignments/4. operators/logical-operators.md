@@ -94,7 +94,7 @@ first alert box show value 1
 secound alert box show value 2
 
 //reason:
-"OR" operator find first true value;
-in main alert function  first  come alert(1),  becouse it is a function its execute and show 1 in the alert box . then come 2 ,becouse 2 is a true value thats why the hole OR operation terminate and the main alert function show the value 2; 
+"OR" operator find first truthy value;
+in main alert function  first  come alert(1),  becouse it is a function its execute and show 1 in the alert box and return undefined and undefined is a false value. then come 2 ,becouse 2 is a truthy value thats why the hole OR operation terminate and the main alert function show the value 2; 
 
 ```

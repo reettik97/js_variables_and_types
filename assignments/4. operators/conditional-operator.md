@@ -135,7 +135,7 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 ```js
 // Your code goes here
  var num = window.prompt("enter the number");
-  switch(num)
+  switch(true)
    case (num > 90): alert("AA");
            break;  
    case (num>80): alert("AB");

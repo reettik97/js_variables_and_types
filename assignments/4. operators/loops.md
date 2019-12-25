@@ -31,7 +31,7 @@ function formatAmount()
 {
     var str = "";
     var total_amount = amount +  calculateTax(amount);
-    total_amount = total_amount.toFixed()
+    total_amount = total_amount.toFixed(2)
     str = "$ " + String(total_amount);
     return str; 
 }
@@ -76,9 +76,10 @@ for (let i=1;i<=10;i++)
 {
     for(let j=1;j<=10;j++)
     {
-        console.log(i +" * "+ j " = " + (i * j))
+        console.log(i +" * "+ j + " = " + (i * j));
     }
 }
+
 ```
 
 5. 🎖Show the following output using one loop.
